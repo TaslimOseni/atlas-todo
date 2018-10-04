@@ -1,0 +1,30 @@
+body{
+	background-color: #232323;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#timeString{
+	color: #00FF00;
+	font-weight: bold;
+	font-size: 100px;
+}
+
+
+button{
+	height: 50px;
+	width: 150px;
+	margin: 20px;
+}
+
+.welcome{
+	color: #FFFFFF;
+	font-size: 30px;
+	margin: 20px;
+}
