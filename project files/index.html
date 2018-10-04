@@ -5,6 +5,7 @@
 <head>
 	<title>Atlas-Countdowntimer</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css"></script>
+	<script src="js/logic.js"></script>
 </head>
 
 
@@ -15,11 +16,11 @@
 
 
 	<div class="center">
-		<p id="timeString">00:00:00</p>
+		<p id="timer_text">01:00:00</p>
 
-	<button>START</button>
-	<button>RESET</button>
-	
+	<button id="start_button" onclick="press_start(3599)">START</button>
+	<button id="reset_button">RESET</button>
+
 	</div>
 	
 </body>

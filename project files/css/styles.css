@@ -10,8 +10,8 @@ body{
     text-align: center;
 }
 
-#timeString{
-	color: #00FF00;
+#timer_text{
+	color: #FFFF00;
 	font-weight: bold;
 	font-size: 100px;
 }
