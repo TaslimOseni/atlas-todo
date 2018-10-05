@@ -1,0 +1,56 @@
+body{
+    background-color: #f6f6f6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #555;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    background-color: #2f7de1;
+    align-items: center
+}
+
+.logo h1{
+    color: white;
+    font-size: 3em;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.input-controls{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#input{
+    width: 70%;
+    border: none;
+    border-radius: 30px;
+    background-color: #ddd;
+    height: 25px;
+    padding: 10px;
+}
+
+.input-controls button{
+    background-color: #2f7de1;
+    color: white;
+    height: 45px;
+    padding: 5px;
+    width: 10%;
+    border-radius: 30px;
+    border: none;
+    margin-left: 2%
+}
