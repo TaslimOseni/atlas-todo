@@ -6,11 +6,14 @@
         <meta name="viewport" content="width=device-width">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src="js/script.js"></script>
     </head>
+
+
     <body>
         
         <div class="container">
-            <!--Main container for all elements -->
+            
              <header>
                 <div class="logo">
                     <img src="images/logo.jpg" >
@@ -19,23 +22,17 @@
             
                 <div class="input-controls">
                     <input type="text" placeholder="What do you want to do?" id="input">
-                    <button id="add-todo">ADD</button>
+                    <button id="add-todo" onclick="add_new()">ADD</button>
                 </div>
             </header>
         
             <div class="list-container">
-                <ul class="todo-list" id="todo"> <!--This list holds the list of things to be done -->
-                    <li>Build an app</li>
-                    <li>Cook Jollof Rice</li>
-                    <li>Fry plantain</li>
+                <ul class="todo-list" id="todo">
                 </ul>
 
             </div>
         
         </div>
         
-       
-    
-<!--        Add link to script here-->
     </body>
 </html>
