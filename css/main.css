@@ -8,9 +8,11 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+    padding-bottom: 5%;
     background-color: #fff;
     box-shadow: 2px 2px 3px #555;
 }
+
 
 .logo{
     display: flex;
@@ -42,6 +44,7 @@ body{
     background-color: #ddd;
     height: 25px;
     padding: 10px;
+    outline: none;
 }
 
 .input-controls button{
@@ -52,5 +55,31 @@ body{
     width: 10%;
     border-radius: 30px;
     border: none;
-    margin-left: 2%
+    margin-left: 1%;
+    transition: 0.5s all;
+}
+
+.input-controls button:hover{
+    background-color: white;
+    color: #2f7de1;
+    border: 1px solid #2f7de1;
+}
+
+.list-container{
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-container ul{
+    list-style: none;
+    padding: 0;
+}
+
+.list-container li{
+    border: 1px solid #2f7de1;
+    padding: 10px;
+    background-color: #ddd;
+    margin: 5px;
+    
 }
