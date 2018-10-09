@@ -24,6 +24,7 @@ var todos = (localStorage.getItem('todo'))? JSON.parse(localStorage.getItem('tod
 //Displays todos that have previously been stored on the user's device
 displayData()
 
+
 function storeDataLocally(){
     localStorage.setItem('todo', JSON.stringify(todos));
 }
@@ -67,3 +68,33 @@ function addItemToDOM(todo){
     //Adds the new list item to the top of the list
     todo_list.insertBefore(list_item, todo_list.childNodes[0]);
 }
+
+	  //create a button
+	  var button = document.createElement("button");
+
+	  //adds a class and text note
+
+	  button.textContent = "delete";
+	  button.classList.add("delete");
+
+	  //appends the button to the list item
+	  li.appendChild(button)
+	
+
+	  //append the todo-text to the li
+	  li.appendChild(document.createTextNode(todo_text));
+	  
+	  //Append the li to the ul
+	  ul.appendChild(li);
+
+	  //revert the text in the text-input to ''
+	  document.getElementById('input').value = '';
+}
+
+
+//Adding an event Listener for the button
+document.addEventListener("click", function(e) {
+	if(e.target.classList.contains("delete")) {
+		e.target.parentElement.remove();
+	}
+});
