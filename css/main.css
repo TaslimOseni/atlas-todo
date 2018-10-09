@@ -27,8 +27,8 @@ body{
 }
 
 .logo img{
-    width: 150px;
-    height: 150px;
+    width: 25%;;
+    height: auto;
 }
 
 .input-controls{
@@ -67,7 +67,7 @@ body{
 }
 
 .list-container{
-    width: 84%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -83,4 +83,28 @@ body{
     background-color: #ddd;
     margin: 5px;
     
+}
+
+@media(max-width:768px){
+    .container{
+         width: 90%;
+    }
+    
+    .logo h1{
+        font-size: 2em;
+    }
+    
+    .input-controls{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    #input{
+        width: 80%;
+    }
+    
+    .input-controls button{
+        width: 85%;
+        margin-top: 10px;
+    }
 }
