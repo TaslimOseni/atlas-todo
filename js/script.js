@@ -7,6 +7,14 @@ var inputField = document.getElementById('input');
 //Adds task to the taskList when the add_button is clicked
 add_button.addEventListener('click', add_new);
 
+//Add tasks to task list when the enter key is pressed
+inputField.addEventListener("keypress", function(event){
+    if(event.which === 13){ 
+        //Checks if the enter key as pressed
+        add_new();
+    }
+})
+
 //Object to store all the tasks added by the user
 var todoItems = (localStorage.getItem('todo'))? JSON.parse(localStorage.getItem('todo')) : {
     listOfTodo:[]
