@@ -83,3 +83,12 @@ body{
     margin: 5px;
     
 }
+
+.delete {
+    margin-right: 40px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #2f7de1;
+    color: white;
+    background-color: #2f7de1;
+}
