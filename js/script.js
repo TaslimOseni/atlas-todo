@@ -61,6 +61,19 @@ function add_new(){
 function addItemToDOM(todo){
     
     var list_item = document.createElement('li');
+    
+    //create a button
+    var button = document.createElement("button");
+
+    //adds a class and text note
+
+    button.textContent = "Delete";
+    button.classList.add("delete");
+    //button.addEventListener('click', removeTodoItem);
+
+    //appends the button to the list item
+    list_item.appendChild(button)
+    
     list_item.appendChild(document.createTextNode(todo));
     
     var todo_list = document.getElementById("todo")
@@ -69,32 +82,18 @@ function addItemToDOM(todo){
     todo_list.insertBefore(list_item, todo_list.childNodes[0]);
 }
 
-	  //create a button
-	  var button = document.createElement("button");
 
-	  //adds a class and text note
-
-	  button.textContent = "delete";
-	  button.classList.add("delete");
-
-	  //appends the button to the list item
-	  li.appendChild(button)
-	
-
-	  //append the todo-text to the li
-	  li.appendChild(document.createTextNode(todo_text));
-	  
-	  //Append the li to the ul
-	  ul.appendChild(li);
-
-	  //revert the text in the text-input to ''
-	  document.getElementById('input').value = '';
-}
 
 
 //Adding an event Listener for the button
 document.addEventListener("click", function(e) {
 	if(e.target.classList.contains("delete")) {
-		e.target.parentElement.remove();
+        let listItemClicked = event.target.parentElement;
+        let todo = listItemClicked.innerText;
+        todos.listOfTodo.splice(todos.listOfTodo.indexOf(todo), 1);
+        storeDataLocally();
+        e.target.parentElement.remove();
 	}
 });
+
+
